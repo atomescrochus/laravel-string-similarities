@@ -4,7 +4,7 @@ All Notable changes to `laravel-string-similarities` will be documented in this 
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-## Unreleased (DATE)
+## 1.0.0 - 2017-01-08
 
 ### Added
 - Method for a Levenshtein comparison
