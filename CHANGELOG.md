@@ -4,6 +4,12 @@ All Notable changes to `laravel-string-similarities` will be documented in this 
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+## 1.0.0 - 2017-01-08
+
+### Added
+- Method for a Levenshtein comparison
+- Method for a Smith Waterman Gotoh comparison
+
 ## 0.0.1 - 2017-01-08
 
 ### Added
