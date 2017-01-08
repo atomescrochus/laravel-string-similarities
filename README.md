@@ -1,5 +1,9 @@
 # laravel-string-similarities
 
+[![Latest Stable Version](https://poser.pugx.org/atomescrochus/laravel-string-similarities/v/stable)](https://packagist.org/packages/atomescrochus/laravel-string-similarities)
+[![License](https://poser.pugx.org/atomescrochus/laravel-string-similarities/license)](https://packagist.org/packages/atomescrochus/laravel-string-similarities)
+[![Total Downloads](https://poser.pugx.org/atomescrochus/laravel-string-similarities/downloads)](https://packagist.org/packages/atomescrochus/laravel-string-similarities)
+
 Compare two string and get a similarity percentage. Note that I did not write the algorithms myself, see down this document for the full credits.
 
 ## Install
