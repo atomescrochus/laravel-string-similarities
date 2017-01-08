@@ -2,8 +2,6 @@
 
 Compare two string and get a similarity percentage. Note that I did not write the algorithms myself, see down this document for the full credits.
 
-**NOT SUITABLE FOR PRODUCTION YET!**
-
 ## Install
 
 You can install this package via composer:
@@ -24,7 +22,17 @@ Then you have to install the package' service provider and alias:
 
 ## Usage
 
-Coming.
+``` php
+$comparison = new \Atomescrochus\StringSimilarities\Compare();
+
+// the functions returns similarity percentage between strings
+$levenshtein = $comparison->levenshtein('first string', 'second string'); // Levenshtein comparison
+$smg = $comparison->smg('first string', 'second string'); // Smith Waterman Gotoh comparison
+
+// this one is not functional at the moment, use at your own risk if you do
+// I have trouble adapting its code to PHP7.0 and up.
+$jw = $comparison->jaroWinkler('first string', 'second string'); // Jaro Winkler comparison
+```
 
 ## Change log
 
