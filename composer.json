@@ -1,0 +1,53 @@
+{
+    "name": "atomescrochus/laravel-string-similarities",
+    "type": "library",
+    "description": "Compare two string and get a similarity percentage",
+    "keywords": [
+        "atomescrochus",
+        "laravel-string-similarities",
+        "string",
+        "comparison",
+        "Levenshtein",
+        "Jaro",
+        "Winkler",
+        "Smith",
+        "Waterman",
+        "Gotoh"
+    ],
+    "homepage": "https://github.com/atomescrochus/laravel-string-similarities",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jean-Philippe Murray",
+            "email": "jp@atomescroch.us",
+            "homepage": "http://atomescroch.us",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0||~5.0",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Atomescrochus\\StringSimilarities\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Atomescrochus\\StringSimilarities\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

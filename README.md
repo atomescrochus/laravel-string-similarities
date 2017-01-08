@@ -2,6 +2,8 @@
 
 Compare two string and get a similarity percentage. Note that I did not write the algorithms myself, see down this document for the full credits.
 
+**NOT SUITABLE FOR PRODUCTION YET!**
+
 ## Install
 
 You can install this package via composer:
