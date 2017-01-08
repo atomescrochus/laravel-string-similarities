@@ -6,6 +6,8 @@
 
 Compare two string and get a similarity percentage. Note that I did not write the algorithms myself, see down this document for the full credits.
 
+Some methods are usable in production, some are not, see usage for informations. Pull requests are more than welcomed!
+
 ## Install
 
 You can install this package via composer:
