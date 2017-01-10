@@ -4,6 +4,11 @@ All Notable changes to `laravel-string-similarities` will be documented in this 
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+## 1.0.1 - 2017-01-10
+
+### Fixed
+- smg() that didn't return, but echo, stupid mistake.
+
 ## 1.0.0 - 2017-01-08
 
 ### Added
