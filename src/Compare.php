@@ -32,6 +32,6 @@ class Compare
     public function smg($first, $second)
     {
         $o = new \Atomescrochus\StringSimilarities\SmithWatermanGotoh();
-        echo $o->compare($first, $second);
+        return $o->compare($first, $second);
     }
 }
