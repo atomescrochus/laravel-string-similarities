@@ -34,4 +34,11 @@ class Compare
         $o = new \Atomescrochus\StringSimilarities\SmithWatermanGotoh();
         return $o->compare($first, $second);
     }
+
+    public function similarText($first, $second)
+    {
+        similar_text($first, $second, $percent);
+
+        return $percent;
+    }
 }

@@ -34,6 +34,7 @@ $comparison = new \Atomescrochus\StringSimilarities\Compare();
 // the functions returns similarity percentage between strings
 $levenshtein = $comparison->levenshtein('first string', 'second string'); // Levenshtein comparison
 $smg = $comparison->smg('first string', 'second string'); // Smith Waterman Gotoh comparison
+$similar = $comparison->similarText('first string', 'second string'); // Using "similar_text()"
 
 // this one is not functional at the moment, use at your own risk if you do
 // I have trouble adapting its code to PHP7.0 and up.
