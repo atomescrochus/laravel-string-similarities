@@ -34,6 +34,12 @@ $comparison = new \Atomescrochus\StringSimilarities\Compare();
 // the functions returns similarity percentage between strings
 $levenshtein = $comparison->levenshtein('first string', 'second string'); // Levenshtein comparison
 $smg = $comparison->smg('first string', 'second string'); // Smith Waterman Gotoh comparison
+$similar = $comparison->similarText('first string', 'second string'); // Using "similar_text()"
+
+// This next one will return an array containing the results of all working comparison methods
+// plus an array of 'data' that includes the first and second string, and the time in second it took to run all
+// comparison. BE AWARE that comparing long string can results in really long compute time!
+$all = $comparison->all('first string', 'second string');
 
 // this one is not functional at the moment, use at your own risk if you do
 // I have trouble adapting its code to PHP7.0 and up.
