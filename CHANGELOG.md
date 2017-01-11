@@ -7,7 +7,8 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ## Unreleased - DATE
 
 ### Added
-- A function for comparison using `similar_text()`
+- A function for comparison using similar_text()`
+- Added a `all()` method that returns score for all available comparison methods
 
 ## 1.0.1 - 2017-01-10
 

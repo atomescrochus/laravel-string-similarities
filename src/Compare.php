@@ -7,6 +7,30 @@ use Atomescrochus\StringSimilarities\SmithWatermanGotoh;
 class Compare
 {
 
+    public function all($first, $second)
+    {
+        $start = microtime(true);
+
+        $similar =$this->similarText($first, $second);
+        $smg = $this->smg($first, $second);
+        // $jaroWinkler = $this->jaroWinkler($first, $second);
+        $levenshtein = $this->levenshtein($first, $second);
+
+        $end = microtime(true) - $start;
+
+        return [
+            'data' => [
+                'first_string' => $first,
+                'second_string' => $second,
+                'run_time_in_seconds' => $end,
+            ],
+            'similar_text' => $similar,
+            'smg' => $smg,
+            // 'jaroWinkler' => $jaroWinkler,
+            'levenshtein' => $levenshtein
+        ];
+    }
+
     /**
      * Run a basic levenshtein comparison using PHP's built-in function
      *
