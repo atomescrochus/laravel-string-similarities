@@ -13,7 +13,7 @@ class Compare
 
         $similar =$this->similarText($first, $second);
         $smg = $this->smg($first, $second);
-        // $jaroWinkler = $this->jaroWinkler($first, $second);
+        $jaroWinkler = $this->jaroWinkler($first, $second);
         $levenshtein = $this->levenshtein($first, $second);
 
         $end = microtime(true) - $start;
@@ -26,7 +26,7 @@ class Compare
             ],
             'similar_text' => $similar,
             'smg' => $smg,
-            // 'jaroWinkler' => $jaroWinkler,
+            'jaroWinkler' => $jaroWinkler,
             'levenshtein' => $levenshtein
         ];
     }

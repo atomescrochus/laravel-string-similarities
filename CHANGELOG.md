@@ -4,6 +4,11 @@ All Notable changes to `laravel-string-similarities` will be documented in this 
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+## 1.2.0 - 2017-04-21
+
+### Added
+- JaroWinkler comparison is working, thanks to [jbardnz](https://github.com/jbardnz)
+
 ## 1.1.0 - 2017-01-11
 
 ### Added

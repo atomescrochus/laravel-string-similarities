@@ -32,6 +32,7 @@ Then you have to install the package' service provider and alias:
 $comparison = new \Atomescrochus\StringSimilarities\Compare();
 
 // the functions returns similarity percentage between strings
+$jaroWinkler = $comparison->jaroWinkler('first string', 'second string'); // JaroWinkler comparison
 $levenshtein = $comparison->levenshtein('first string', 'second string'); // Levenshtein comparison
 $smg = $comparison->smg('first string', 'second string'); // Smith Waterman Gotoh comparison
 $similar = $comparison->similarText('first string', 'second string'); // Using "similar_text()"
@@ -40,10 +41,6 @@ $similar = $comparison->similarText('first string', 'second string'); // Using "
 // plus an array of 'data' that includes the first and second string, and the time in second it took to run all
 // comparison. BE AWARE that comparing long string can results in really long compute time!
 $all = $comparison->all('first string', 'second string');
-
-// this one is not functional at the moment, use at your own risk if you do
-// I have trouble adapting its code to PHP7.0 and up.
-$jw = $comparison->jaroWinkler('first string', 'second string'); // Jaro Winkler comparison
 ```
 
 ## Change log
@@ -64,9 +61,9 @@ If you discover any security related issues, please email jp@atomescroch.us inst
 
 ## Credits
 
-- [Jean-Philippe Murray][link-author]
+- [Jean-Philippe Murray](https://github.com/jpmurray/)
 - [joshweir over StackOverflow](http://stackoverflow.com/a/38236357/1001942) for pointing me to the solutions and algorithms for the Jaro Winkler and Smith Waterman Gotoh comparison
-- [All Contributors][link-contributors]
+- [All Contributors](https://github.com/atomescrochus/laravel-string-similarities/graphs/contributors)
 
 ## License
 
