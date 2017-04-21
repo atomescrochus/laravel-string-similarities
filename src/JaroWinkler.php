@@ -25,7 +25,7 @@ class JaroWinkler
 				if($temp_string2[$j] == $string1[$i]){
 					$noMatch = False;
 					$commonCharacters .= $string1[$i];
-					$temp_string2[$j] = '';
+					substr_replace($temp_string2, '', $j, 1);
 				}
 			}
 		}
