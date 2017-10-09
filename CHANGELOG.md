@@ -4,6 +4,10 @@ All Notable changes to `laravel-string-similarities` will be documented in this 
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+## 1.3.1 - 2017-10-09
+### Fix
+Typo in the composer code for autodiscovery
+
 ## 1.3.0 - 2017-10-09
 ### Added
 Support for Laravel 5.5 package autodiscovery.
