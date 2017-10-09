@@ -16,7 +16,7 @@ You can install this package via composer:
 $ composer require atomescrochus/laravel-string-similarities
 ```
 
-Then you have to install the package' service provider and alias:
+Then you have to install the package' service provider, _unless you are running Laravel >=5.5_ (it'll use package auto-discovery) :
 
 ```php
 // config/app.php
