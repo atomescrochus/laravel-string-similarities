@@ -53,7 +53,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Atomescrochus\\StringSimilarities\\StringSimilaritiesServiceProvider::class,"
+                "Atomescrochus\\StringSimilarities\\StringSimilaritiesServiceProvider::class"
             ]
         }
     }
