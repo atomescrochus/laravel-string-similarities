@@ -49,5 +49,12 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Atomescrochus\\StringSimilarities\\StringSimilaritiesServiceProvider::class,"
+            ]
+        }
     }
 }
