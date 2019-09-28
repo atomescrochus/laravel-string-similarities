@@ -4,6 +4,14 @@ All Notable changes to `laravel-string-similarities` will be documented in this 
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+## 1.3.3 - 2019-09-28
+### Fix
+- [This PR from @dearsina](https://github.com/atomescrochus/laravel-string-similarities/pull/5) fixes the Jaro-Winkler comparison returning different results when comparing an example string "A" to "B" and "B" to "A".
+
+## 1.3.2 - 2017-10-09
+### Fix
+Fixed composer provider references.
+
 ## 1.3.1 - 2017-10-09
 ### Fix
 Typo in the composer code for autodiscovery
