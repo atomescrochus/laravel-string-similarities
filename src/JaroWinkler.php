@@ -15,7 +15,7 @@ class JaroWinkler
 		$str2_len = strlen($string2);
 		$temp_string2 = $string2;
 
-		$commonCharacters='';
+		$commonCharacters = [];
 		for($i=0; $i < $str1_len; $i++){
 
 			$noMatch = True;
@@ -24,12 +24,12 @@ class JaroWinkler
 			for($j= max(0, $i-$allowedDistance ); $noMatch && $j < min( $i + $allowedDistance + 1, $str2_len); $j++){
 				if($temp_string2[$j] == $string1[$i]){
 					$noMatch = False;
-					$commonCharacters .= $string1[$i];
+					$commonCharacters[$string1[$i]] = $string1[$i];
 					substr_replace($temp_string2, '', $j, 1);
 				}
 			}
 		}
-		return $commonCharacters;
+		return implode("", $commonCharacters);
 	}
 
     private function jaro($string1, $string2){
