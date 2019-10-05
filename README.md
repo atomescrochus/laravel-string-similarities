@@ -49,7 +49,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 
 ## Testing
 
-Coming.
+HELP NEEDED.
 
 ## Contributing
 
