@@ -25,7 +25,6 @@
         }
     ],
     "require": {
-        "illuminate/support": "~5.1",
         "php" : "~7.0"
     },
     "require-dev": {
@@ -50,6 +49,7 @@
     "config": {
         "sort-packages": true
     },
+    "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
