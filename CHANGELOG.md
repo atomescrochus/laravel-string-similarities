@@ -4,6 +4,9 @@ All Notable changes to `laravel-string-similarities` will be documented in this 
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+# 2.1.0 - 2022-10-27
+- Added compatibility with PHP 8.
+
 # 2.0.0 - 2020-03-31
 - Removed `illuminate\support` dependency because, well, we don't need it. 🤷‍♂️
 
